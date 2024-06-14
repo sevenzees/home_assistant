@@ -42,9 +42,9 @@ class HomeAssistant {
   /// Returns an [Entity] object.
   Future<Entity> fetchState(String id) => _api.fetchState(id);
 
-  /// Calls a service on Home Assistant.
+  /// Fetches a list of services from Home Assistant.
   ///
-  /// Returns a [Service] object.
+  /// Returns a list of [Service] objects.
   Future<List<Service>> fetchServices() => _api.fetchServices();
 
   /// Executes the provided action on the given Home Assistant [Service].
